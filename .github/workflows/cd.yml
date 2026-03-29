@@ -31,5 +31,5 @@ jobs:
           context: .
           push: true
           tags: |
-            williambr2022/auxiliadora-checkin:latest
-            williambr2022/auxiliadora-checkin:${{ github.sha }}
+            williambr2022/kerigma-checkin:latest
+            williambr2022/kerigma-checkin:${{ github.sha }}
