@@ -6,7 +6,7 @@ import { EventModel } from '../core/models/event';
 @Injectable({ providedIn: 'root' })
 export class EventService {
     
-    private apiUrl = 'https://backend.rcc-londrina.online/api/v1';
+    private apiUrl = 'https://backend.kerigma-eventos.online/api/v1';
 //    private apiUrl = 'http://192.168.15.5:5100/api/v1';
     
     constructor(private http: HttpClient) {}
@@ -25,5 +25,12 @@ export class EventService {
     
     fazerCheckin(codigoInscricao: string) {
         return this.http.get(`${this.apiUrl}/eventos/${codigoInscricao}/checkin`);
+    }
+
+    enviarCheckin(urlCheckinQrCode: string){
+        if (this.apiUrl.match('localhost')) {
+            urlCheckinQrCode = urlCheckinQrCode.replaceAll('https://backend.kerigma-eventos.online','http://localhost:5290')
+        }
+        return this.http.get(urlCheckinQrCode);
     }
 }

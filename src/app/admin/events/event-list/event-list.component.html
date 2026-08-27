@@ -50,7 +50,7 @@
           </td>
 
           <td class="text-center">
-            <button *ngIf="evento.status == 'Publicado'"
+            <button *ngIf="evento.status != 'Publicado'"
               class="btn btn-sm btn-primary"
               (click)="abrir(evento)">
               <i class="bi bi-check2-square"></i>

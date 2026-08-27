@@ -6,8 +6,8 @@ import { Subject } from 'rxjs';
 export class SignalrService {
     
     private hubConnection!: signalR.HubConnection;
-    private baseUrl = 'https://backend.rcc-londrina.online';
-    // private baseUrl = 'http://localhost:5290/api/v1';
+    private baseUrl = 'https://backend.kerigma-eventos.online';
+    // private baseUrl = 'http://localhost:5290';
     // private baseUrl = 'http://192.168.15.5:5100';
     // 🔥 evento global
     private checkinRecebidoSource = new Subject<string>();

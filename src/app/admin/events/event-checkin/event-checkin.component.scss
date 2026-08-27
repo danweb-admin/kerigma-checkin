@@ -1,5 +1,5 @@
 .event-title {
-  color: #c7377a;
+  color: #39ae99;
   margin-bottom: 12px;
 }
 
@@ -20,7 +20,7 @@
 }
 
 .tabs button.active {
-  background: #c7377a;
+  background: #39ae99;
   color: white;
 }
 
@@ -37,7 +37,7 @@
 .btn-checkin {
   width: 100%;
   padding: 12px;
-  background: #d8569c;
+  background: #39ae99;
   border: none;
   color: white;
   border-radius: 10px;
@@ -74,7 +74,7 @@
 
 /* Efeito focus no container inteiro */
 .search-box:focus-within {
-  border-color: #d45a91;
+  border-color: #39ae99;
   box-shadow: 0 0 0 3px rgba(212, 90, 145, 0.2);
 }
 
